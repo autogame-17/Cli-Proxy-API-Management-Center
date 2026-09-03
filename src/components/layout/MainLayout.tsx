@@ -21,6 +21,7 @@ import {
   IconSidebarAuthFiles,
   IconSidebarConfig,
   IconSidebarDashboard,
+  IconSidebarDeviceUsage,
   IconSidebarLogs,
   IconSidebarOauth,
   IconSidebarPlugins,
@@ -55,6 +56,7 @@ import type { Theme } from '@/types';
 
 const sidebarIcons: Record<string, ReactNode> = {
   dashboard: <IconSidebarDashboard size={18} />,
+  deviceUsage: <IconSidebarDeviceUsage size={18} />,
   quickStart: <IconSidebarQuickStart size={18} />,
   aiProviders: <IconSidebarProviders size={18} />,
   authFiles: <IconSidebarAuthFiles size={18} />,
@@ -645,6 +647,12 @@ export function MainLayout() {
           labelKey: 'nav.quota_management',
           metaKey: 'nav_meta.quota_management',
           icon: sidebarIcons.quota,
+        },
+        {
+          path: '/device-usage',
+          labelKey: 'nav.device_usage',
+          metaKey: 'nav_meta.device_usage',
+          icon: sidebarIcons.deviceUsage,
         },
         {
           path: '/logs',

@@ -18,6 +18,7 @@ style.md
 node_modules
 dist
 dist-ssr
+.claude/launch.json
 *.local
 skills
 
